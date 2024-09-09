@@ -1,7 +1,19 @@
-package com.thread.GuardedObject;
+package com.thread.GuardedObject.version2;
 
-public class GuaredeObject {
-    //结果
+
+import com.thread.GuardedObject.version1.GuaredeObject;
+
+public class GuardedObject {
+    private int id;
+
+    public GuardedObject(int id){
+        this.id = id;
+    }
+
+    public int getId(){
+        return id;
+    }
+
     private Object response;
 
     /**
@@ -25,7 +37,7 @@ public class GuaredeObject {
                 }
                 passedTime = System.currentTimeMillis() - begin;
             }
-           return response;
+            return response;
         }
     }
 
@@ -37,6 +49,5 @@ public class GuaredeObject {
             this.notifyAll();
         }
     }
-
 
 }

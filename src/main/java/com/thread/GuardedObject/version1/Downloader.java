@@ -1,4 +1,4 @@
-package com.thread.GuardedObject;
+package com.thread.GuardedObject.version1;
 
 import java.io.BufferedReader;
 import java.io.IOException;
